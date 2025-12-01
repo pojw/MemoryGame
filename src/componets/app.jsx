@@ -1,9 +1,13 @@
 //Main Page
 import {  useEffect , useState } from "react"
-
+import Card from "./card"
 
 export default function CharacterList(){
     const [people, setPeople]=useState([])
+    const [type,setType]=useState('Paramecia')
+    let[ click,setClick] =useState([])
+
+
 
 
 useEffect(()=>{
@@ -21,15 +25,26 @@ useEffect(()=>{
 
     }
     fetchPeople();
-},[])
+},[type])
+
+function handleClick(index){
+    if(!click.includes(index)){
+        alert("good")
+        let clone=[...click,index]
+        
+        setClick(clone)
+    }
+}
 
 return (
    <div>
-    {people.filter((value)=>value.id===1).map((filtered)=>(
-        <div>  <div>{filtered.name}</div>
-        <img src={filtered.filename}></img></div>
-      
+    <div>{type}</div>
+    {people.filter((value)=>value.type===type).slice(4,7).map((filtred)=>
+  
+    (
+     <Card name={filtred.name} url={filtred.filename} onclick={()=>{handleClick(filtred.id)}}></Card>
     ))
+
     }
 
 
