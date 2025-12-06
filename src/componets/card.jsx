@@ -1,11 +1,13 @@
 //card layout
 
+import AddMemory from "./memoryState"
+export default function Card({name,filename,onClick
+    }){
 
-export default function Card({name,url,onclick}){
 
     return(
-        <div  onClick={onclick}>
-            <img src ={url}></img>
+        <div className="card" onClick={onClick}>
+            <img src ={filename}></img>
             <div> {name} </div>
 
 

@@ -1,15 +1,126 @@
-.Content{
-    background-color: black;
-    height: 100vh;
-    width: 100vw;
-}
+
 
 html body{margin: 0;
 padding: 0;
+background-image: url('./assets/Devil_Fruit_Infobox.webp');
+background-size:cover
+;
+background-repeat: no-repeat;
+background-position: center;
+
 }
 
 img{height: 100px;
 
 
     width: 100px;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+
+    display :grid;
+    grid-template-rows: 10% 50% 10%;
+}
+.details{
+display:flex;
+align-items: center;
+justify-content: end;
+padding-right: 90px;
+font-size:22px;
+font-weight: 700
+;
+
+}
+.score{
+    background-color: rgb(177, 198, 201);
+    border-radius: 10px;
+    height: 70px;
+    width: 190px;
+    
+}
+.scoreDetail{
+    display:flex;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+
+.options{
+
+    display:flex;
+    height:40vh;
+    align-items: end;
+    justify-content: center;
+    width: 100vw;
+    gap:25px;
+}
+.mode{
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    
+    display:flex;
+    gap:10px;
+    background-color: rgb(177, 198, 201);
+    height: 35px;
+
+
+}
+.modeButtons{
+    color:rgb(8, 78, 170);
+    font-size: 17px;
+
+}
+
+.modeButtons:hover{
+    background-color:rgba(206, 138, 36, 0.596);
+}
+
+.card{
+    height: 150px;
+    width: 150px;
+ 
+    display: grid;
+    align-items: center;
+    justify-items: center;    ;    margin:15px;
+    border: 3px solid transparent;
+
+}
+
+.card:hover{
+    border-radius: 20px;
+    border-color: rgb(27, 147, 226); ;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:15px
+
+}
+
+.restart{
+    color:rgb(219, 30, 93)
+    ;
+    font-size: 17px;
+
+}
+
+.restart:hover{
+    background-color: rgb(26, 24, 24);
+}
+
+.info{
+    font-size: 60px;
+    text-align: center;
+    padding: 10px;
+    padding-top:30px
+
+}
+.cardSection{
+    display: grid;
+
 }
