@@ -165,4 +165,28 @@ font-weight: 700
         font-size: 30px;
         padding: 10px;
     }
+    .options{
+    width: 100vw;
+    height: fit-content;
+
+}
+.mode{
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    
+    display:flex;
+    background-color: rgb(177, 198, 201);
+    height: fit-content;
+    font-size: 14px;
+
+}
+.modeButtons{
+    height: fit-content;
+            font-size: 14px;
+
+}
+.restart{
+    font-size: 14px;
+}
 }
