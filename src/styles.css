@@ -99,6 +99,8 @@ font-weight: 700
     align-items: center;
     justify-content: center;
     gap:15px
+    ;
+    flex-wrap: wrap;
 
 }
 
@@ -107,6 +109,12 @@ font-weight: 700
     ;
     font-size: 17px;
 
+}@media (max-width: 600px) {
+    .card {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
 }
 
 .restart:hover{
@@ -123,4 +131,38 @@ font-weight: 700
 .cardSection{
     display: grid;
 
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        grid-template-rows: auto auto auto; /* less strict layout */
+    }
+
+    .details {
+        padding-right: 20px;
+        font-size: 18px;
+    }
+
+    .score {
+        width: 150px;
+        height: 60px;
+    }
+
+    .card {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
+
+    .cards {
+        flex-wrap: wrap;       /* allow wrap on iPhone */
+        padding: 5px;
+        gap: 10px;
+    }
+
+    .info {
+        font-size: 30px;
+        padding: 10px;
+    }
 }
